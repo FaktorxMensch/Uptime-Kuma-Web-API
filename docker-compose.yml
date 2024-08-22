@@ -10,6 +10,7 @@ services:
       - uptime-kuma:/app/data
   api:
     build: .
+    container_name: uptime-kuma-web-api-newer
     # image: medaziz11/uptimekuma_restapi:1.2
     volumes:
       - api:/db

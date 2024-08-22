@@ -17,6 +17,7 @@ class Monitor(BaseModel):
 
     # HTTP KEYWORD
     url: Optional[str] = None
+    parent: Optional[int] = None
     expiryNotification: bool = False
     ignoreTls: bool = False
     maxredirects: int = 10
